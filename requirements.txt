@@ -1,0 +1,5 @@
+ultralytics
+Opencv-python
+numpy
+Matplotlib
+Roboflow
