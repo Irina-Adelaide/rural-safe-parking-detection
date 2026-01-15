@@ -68,4 +68,8 @@ assets/examples/
 - Google Colab
 - Roboflow
 - YOLOv8 (Ultralytics)
+- YOLOv11 (number plate detection)
 - OpenCV
+- NumPy
+- Matplotlib
+- Git/GitHub
