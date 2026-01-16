@@ -55,6 +55,40 @@ assets/examples/
 
 ---
 
+## Model Improvement Summary
+
+Through dataset refinement and model tuning, segmentation performance improved
+substantially, particularly for the Obstacle class.
+
+- **Average Mask mAP50:** 0.603 → **0.793** (+31.5%)
+- **Obstacle Mask mAP50:** 0.213 → **0.722**
+- **Average Recall:** 0.591 → **0.710**
+
+---
+
+### Performance Comparison (Mask mAP50)
+
+| Class           | Initial Model | Final Model |
+|-----------------|---------------|-------------|
+| Drivable_area   | 0.922         | **0.987**   |
+| Obstacle        | 0.213         | **0.722**   |
+| Vehicle         | 0.674         | 0.670       |
+| **Average**     | **0.603**     | **0.793**   |
+
+Obstacle segmentation improved by more that 3x, representing the largest gain across all classes.
+A minor decrease in Vehicle mAP was observed, likely due to higher image resolution and inconsistent annotations, which will be addressed in future work. 
+
+---
+
+### Key Factors Behind Improvement
+
+- Re-annotation of the Obstacle class to remove ambiguity with unannotated regions
+- Increased image resolution (640 → 1024)
+- Migration from YOLOv8s-seg to YOLOv8m-seg
+- Careful tuning of batch size, learning rate, and early stopping
+
+---
+
 ## Future Work (Stage 2)
 - Improve Vehicle annotations
 - Evaluate semantic segmentation for Obstacles
