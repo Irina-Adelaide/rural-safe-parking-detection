@@ -75,7 +75,11 @@ substantially, particularly for the Obstacle class.
 | Vehicle         | 0.674         | 0.670       |
 | **Average**     | **0.603**     | **0.793**   |
 
+
+Improvements were achieved by refining obstacle annotations, increasing input resolution, and carefully tuning model hyperparameters, including batch size, learning rate, and patience, while transitioning from YOLOv8s-seg to YOLOv8m-seg and maintaining consistent data augmentation.
+
 Obstacle segmentation improved by more that 3x, representing the largest gain across all classes.
+
 A minor decrease in Vehicle mAP was observed, likely due to higher image resolution and inconsistent annotations, which will be addressed in future work. 
 
 ---
