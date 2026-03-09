@@ -1,5 +1,9 @@
-ultralytics
-Opencv-python
+ultralytics>=8.0.0
+torch
+opencv-python
+huggingface_hub
+roboflow
+tqdm
+matplotlib
 numpy
-Matplotlib
-Roboflow
+pandas
